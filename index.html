@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Linktree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="profil.png" alt="Profile Picture" class="profile-pic">
+        <h1>ZannMods Official <img src="blue.png" alt="Verified" class="verified-icon"></h1>
+        <div class="links">
+            <a href="https://youtube.com/@zannmods" target="_blank" class="link">YOUTUBE <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://www.instagram.com/@zannxtoya" target="_blank" class="link">INSTAGRAM <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://chat.whatsapp.com/KZUmTkFlBeW5qx4heMR7d5" target="_blank" class="link">ROOM PUBLIK GRUP WA <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://whatsapp.com/channel/0029VaYkQ06CHDyh2MQKDm16" target="_blank" class="link">SALURAN WHATSAPP <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://wa.me/6283161631026" target="_blank" class="link">Whatsapp <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://t.me/channelzann" target="_blank" class="link">Source Web <img src="blue.png" alt="Verified" class="verified-icon"></a>
+        </div>
+    </div>
+
+    <audio autoplay>
+        <source src="apasih.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <style>
+    
+    body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, black, #493240);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: linear-gradient(45deg, black, #493240);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 1px 1px 0 black, 2px 2px 0 #004094, 3px 3px 0 #003072;
+    font-weight: bold;
+    animation: shake 0.5s ease-in-out infinite;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    animation: pulse 2s infinite;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.link {
+    background: linear-gradient(45deg, blue, #493240);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    text-shadow: 1px 1px 0 #0056b3, 2px 2px 0 #004094, 3px 3px 0 #003072;
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+}
+
+.link img {
+    margin-left: 10px;
+}
+
+.link:hover {
+    background: linear-gradient(45deg, red, black);
+}
+
+.link:active {
+    animation: click-animation 0.5s forwards;
+}
+
+/* Animation keyframes */
+@keyframes click-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation keyframes for shake */
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Animation keyframes for pulse */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.link');
+    links.forEach(function(link) {
+        link.addEventListener('animationend', function() {
+            link.classList.remove('clicked');
+        });
+
+        link.addEventListener('click', function() {
+            link.classList.add('clicked');
+        });
+    });
+
+    // Trigger the shake animation on "ZannMods Official"
+    var nameElement = document.querySelector('h1');
+    nameElement.classList.add('shake');
+});
+
+
+</script>
+    
+
+    
+</body>
+</html>
