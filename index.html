@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Linktree</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-Ho6DwNrtzFfgz1/SOKlUcmFmKvA9K2u13Y/aOMmgOzQF8yC/kfD9ycRUZUyM47sIogIovIvJ0i18Q8Kj1VQ8Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -17,7 +18,32 @@
             <a href="https://whatsapp.com/channel/0029VaYkQ06CHDyh2MQKDm16" target="_blank" class="link">SALURAN WHATSAPP <img src="blue.png" alt="Verified" class="verified-icon"></a>
             <a href="https://wa.me/6283161631026" target="_blank" class="link">Whatsapp <img src="blue.png" alt="Verified" class="verified-icon"></a>
             <a href="https://t.me/channelzann" target="_blank" class="link">Source Web <img src="blue.png" alt="Verified" class="verified-icon"></a>
+            <a href="https://yourdemo.com" target="_blank" class="link">DEMO WEB <img src="demo-icon.png" alt="Demo" class="verified-icon"></a>
         </div>
+    </div>
+
+    <div class="catalog">
+        <h2>Product Catalog</h2>
+        <div class="product" data-aos="fade-up">
+            <img src="produk.png" alt="Product 1" class="product-img">
+            <div class="product-info">
+                <h3>Produk ZannMods</h3>
+                <p class="product-description">Website FormSave ZannMods yang sedang dikembangkan untuk memunculkan beberapa fitur menarik .</p>
+                <p class="product-price">40.000</p>
+                <a href="https://wa.me/6288298793719" class="buy-button">Buy Now</a>
+                <a href="https://formsave.ytzannmods.my.id" class="buy-button">Demo</a>
+            </div>
+        </div>
+        <div class="product" data-aos="fade-up" data-aos-delay="100">
+            <img src="produk.png" alt="Product 2" class="product-img">
+            <div class="product-info">
+                <h3>Produk Sama</h3>
+                <p class="product-description">FormSave Produk.</p>
+                <p class="product-price">$20.00</p>
+                <a href="#" class="buy-button">Buy Now</a>
+            </div>
+        </div>
+        <!-- Add more products as needed -->
     </div>
 
     <audio autoplay>
@@ -26,156 +52,249 @@
     </audio>
     
     <style>
-    
+    /* Existing styles */
     body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(45deg, black, #493240);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
-    background: linear-gradient(45deg, black, #493240);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.profile-pic {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-}
-
-h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 1px 1px 0 black, 2px 2px 0 #004094, 3px 3px 0 #003072;
-    font-weight: bold;
-    animation: shake 0.5s ease-in-out infinite;
-}
-
-.verified-icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    animation: pulse 2s infinite;
-}
-
-.links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.link {
-    background: linear-gradient(45deg, blue, #493240);
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-    text-shadow: 1px 1px 0 #0056b3, 2px 2px 0 #004094, 3px 3px 0 #003072;
-    font-weight: bold;
-    font-size: 18px;
-    width: 100%;
-}
-
-.link img {
-    margin-left: 10px;
-}
-
-.link:hover {
-    background: linear-gradient(45deg, red, black);
-}
-
-.link:active {
-    animation: click-animation 0.5s forwards;
-}
-
-/* Animation keyframes */
-@keyframes click-animation {
-    0% {
-        transform: scale(1);
+        font-family: Arial, sans-serif;
+        background: linear-gradient(45deg, #141e30, #243b55);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
     }
-    50% {
-        transform: scale(0.9);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
 
-/* Animation keyframes for shake */
-@keyframes shake {
-    0%, 100% {
-        transform: translateX(0);
+    .container {
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        background: linear-gradient(45deg, #141e30, #243b55);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin-bottom: 20px;
+        color: #fff;
     }
-    25% {
-        transform: translateX(-5px);
-    }
-    50% {
-        transform: translateX(5px);
-    }
-    75% {
-        transform: translateX(-5px);
-    }
-}
 
-/* Animation keyframes for pulse */
+    .profile-pic {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #00aced;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-shadow: 1px 1px 0 black, 2px 2px 0 #004094, 3px 3px 0 #003072;
+        font-weight: bold;
+        animation: shake 0.5s ease-in-out infinite;
+    }
+
+    .verified-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        animation: pulse 2s infinite;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link {
+        background: linear-gradient(45deg, #00aced, #141e30);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s;
+        text-shadow: 1px 1px 0 #0056b3, 2px 2px 0 #004094, 3px 3px 0 #003072;
+        font-weight: bold;
+        font-size: 18px;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .link img {
+        margin-left: 10px;
+    }
+
+    .link:hover {
+        background: linear-gradient(45deg, #ff4b2b, #141e30);
+    }
+
+    .link:active {
+        animation: click-animation 0.5s forwards;
+    }
+
+    /* Animation keyframes */
+    @keyframes click-animation {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(0.9);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    /* Animation keyframes for shake */
+    @keyframes shake {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-5px);
+        }
+        50% {
+            transform: translateX(5px);
+        }
+        75% {
+            transform: translateX(-5px);
+        }
+    }
+
+    /* Animation keyframes for pulse */
 @keyframes pulse {
-    0% {
-        transform: scale(1);
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.2);
+        }
+        100% {
+            transform: scale(1);
+        }
     }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-</style>
 
-<script>
+    .catalog {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 20px;
+        padding: 20px;
+        background: linear-gradient(45deg, #141e30, #243b55);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        color: white;
+    }
 
-document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('.link');
-    links.forEach(function(link) {
-        link.addEventListener('animationend', function() {
-            link.classList.remove('clicked');
+    .catalog h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+        color: #00aced;
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        background: linear-gradient(45deg, #243b55, #141e30);
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s;
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+
+    .product-img {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .product-info h3 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+
+    .product-description {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    .product-price {
+        font-size: 20px;
+        margin: 10px 0;
+        color: #ff4b2b;
+    }
+
+    .buy-button {
+        background: linear-gradient(45deg, #00aced, #141e30);
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 16px;
+        transition: background-color 0.3s;
+        text-shadow: 1px 1px 0 #0056b3, 2px 2px 0 #004094, 3px 3px 0 #003072;
+    }
+
+    .buy-button:hover {
+        background: linear-gradient(45deg, #ff4b2b, #141e30);
+    }
+
+    @media (max-width: 768px) {
+        .container, .catalog {
+            width: 90%;
+            padding: 15px;
+        }
+
+        .link {
+            font-size: 16px;
+        }
+
+        .product {
+            padding: 15px;
+        }
+    }
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-7GOfGMPMB4sPa9sfi/Tc3wz/Ibt9dXQK5kMT1LCwJj+ghkguqsAPJ4Iw1wJ/A5gJ29mAqIuVNjpUR+L7nHuvSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var links = document.querySelectorAll('.link');
+            links.forEach(function(link) {
+                link.addEventListener('animationend', function() {
+                    link.classList.remove('clicked');
+                });
+
+                link.addEventListener('click', function() {
+                    link.classList.add('clicked');
+                });
+            });
+
+            // Trigger the shake animation on "ZannMods Official"
+            var nameElement = document.querySelector('h1');
+            nameElement.classList.add('shake');
         });
-
-        link.addEventListener('click', function() {
-            link.classList.add('clicked');
-        });
-    });
-
-    // Trigger the shake animation on "ZannMods Official"
-    var nameElement = document.querySelector('h1');
-    nameElement.classList.add('shake');
-});
-
-
-</script>
-    
-
-    
+    </script>
 </body>
 </html>
